@@ -1,0 +1,68 @@
+body{
+    font-family: Inter;
+}
+.toolbar{
+    user-select: none;
+    color: white;
+    font-size: large;
+    position: fixed;
+    width: 100%;
+    margin: -8px;
+    height: 60px;
+    background: rgba(56, 56, 56, 0.5);
+    backdrop-filter: blur(20px);
+}
+.toolbar-content{
+    width: 90%;
+    margin: 0 auto 0 auto;
+}
+.toobar-buttons{
+    margin: -70px auto 0 auto;
+    width: 75%;
+    display: flex;
+}
+.toobar-buttons div{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    display: flex;
+    width: 25%;
+    height: 73px;
+    align-items: center;
+    justify-content: center;
+}
+.toobar-buttons div:hover{
+    color: black;
+    background: rgb(180, 180, 180);
+}
+.toobar-buttons div:active{
+    background: rgb(223, 223, 223);
+}
+
+.content{
+    display: flex;
+}
+
+.content div{
+    margin: 0 auto 0 auto;
+    width: 75%;
+    background: rgba(255, 255, 255, 0.4);
+}
+.content p{
+    font-size: large;
+}
+.content img{
+    width: 70%;
+}
+
+footer div{
+    width: auto;
+    height: 120px;
+    margin: -8px;
+    background: rgba(56, 56, 56, 0.5);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(Inter.ttf);
+}

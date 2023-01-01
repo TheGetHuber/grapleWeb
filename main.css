@@ -12,6 +12,7 @@ body{
     height: 60px;
     background: rgba(56, 56, 56, 0.5);
     backdrop-filter: blur(20px);
+    border-radius: 8px;
 }
 .toolbar-content{
     display: flex;
@@ -25,7 +26,6 @@ body{
 }
 .toobar-buttons div{
     color: white;
-    text-decoration: none;
     transition: 0.3s;
     display: flex;
     width: 25%;
@@ -53,19 +53,28 @@ body{
 
 .content{
     display: flex;
+    flex-direction: column;
     height: 500vh;
+    width: 100%;
 }
-
 .content div{
-    margin: 0 auto 0 auto;
-    width: 75%;
-    background: rgba(255, 255, 255, 0.4);
+    display: flex;
+    margin: 30px auto 0 auto;
+    width: 70%;
+    height: 70vh;
 }
 .content p{
     font-size: large;
 }
 .content img{
-    width: 70%;
+    pointer-events: none;
+    width: 60vh;
+    height: 60vh;
+}
+
+.devicepreview{
+    border: 3px solid gray;
+    border-radius: 20px;
 }
 
 footer div{

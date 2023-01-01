@@ -1,18 +1,20 @@
 body{
     font-family: Inter;
+    font-size: large;
 }
 .toolbar{
     user-select: none;
     color: white;
-    font-size: large;
-    position: fixed;
+    position: sticky;
+    top: 8px;
     width: 100%;
-    margin: -8px;
+    display: flex;
     height: 60px;
     background: rgba(56, 56, 56, 0.5);
     backdrop-filter: blur(20px);
 }
 .toolbar-content{
+    display: flex;
     width: 90%;
     margin: 0 auto 0 auto;
 }
@@ -27,20 +29,31 @@ body{
     transition: 0.3s;
     display: flex;
     width: 25%;
-    height: 73px;
+    height: 60px;
+    margin-top: auto;
     align-items: center;
     justify-content: center;
 }
 .toobar-buttons div:hover{
-    color: black;
-    background: rgb(180, 180, 180);
+    background: rgb(180, 180, 180, 0.5);
 }
 .toobar-buttons div:active{
-    background: rgb(223, 223, 223);
+    background: rgb(223, 223, 223, 0.5);
+}
+.toolbar-user{
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+.toolbar-user img{
+    width: 40px;
+    height: 40px;
+    filter: invert(100%);
 }
 
 .content{
     display: flex;
+    height: 500vh;
 }
 
 .content div{

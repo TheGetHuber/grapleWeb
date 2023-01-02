@@ -2,6 +2,15 @@ body{
     font-family: Inter;
     font-size: large;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
+button{
+    border: none;
+    background: none;
+}
+
 .toolbar{
     user-select: none;
     color: white;
@@ -59,7 +68,7 @@ body{
 }
 .content div{
     display: flex;
-    margin: 30px auto 0 auto;
+    margin: 5cm auto 0 auto;
     width: 70%;
     height: 70vh;
 }
@@ -68,8 +77,27 @@ body{
 }
 .content img{
     pointer-events: none;
-    width: 60vh;
-    height: 60vh;
+    width: 65%;
+    margin: 0 auto 0 auto;
+    height: 80%;
+    object-fit: contain;
+}
+.content span{
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+}
+.content button{
+    transition: 0.3s;
+    background: black;
+    margin: 10px auto 0 auto;
+    padding: 2em;
+    font-size: larger;
+}
+.content a{
+    color: white;
+}
+.content button:hover{
 }
 
 .devicepreview{
@@ -86,5 +114,5 @@ footer div{
 
 @font-face {
     font-family: Inter;
-    src: url(Inter.ttf);
+    src: url(src/fonts/Inter.ttf);
 }
